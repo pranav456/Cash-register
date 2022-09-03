@@ -3,8 +3,9 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
+const table = document.querySelector(".change-table");
 
-const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
+const availableNotes = [2000, 500, 200, 100, 50, 20, 10, 5, 1];
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
   hideMessage();
@@ -17,7 +18,13 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
       const amountToBeReturned = cash - bill;
       calculateChange(amountToBeReturned);
     } else {
-      showMessage("The cash provided should atleast be equal to bill amount");
+      showMessage(
+        "The cash provided should atleast be greater than or equal to bill amount"
+      );
+    }
+    if (cash === bill) {
+      showMessage("Thank you for paying the exact bill amount😊");
+      table.style.display = "none";
     }
   } else {
     showMessage("Invalid bill amount");
