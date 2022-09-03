@@ -1,2 +1,2 @@
 # Cash register
- An app which displays the change to be returned if the cash given is greater than the bill amount
+ An app which helps the user to customer to return the cash in minimum number of notes.
