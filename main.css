@@ -1,11 +1,97 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .body {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  color: rgb(214, 135, 78);
+  align-items: center;
 }
+
+#error-message {
+  color: red;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   width: 50vw;
+  /* background-color: rgb(238, 255, 0); */
+  border-radius: 9px;
+  align-items: center;
+  margin-top: 9vh;
+  padding: 1.1rem 1.1rem;
+  color: black;
+  margin-left: 350px;
+  margin-top: 65px;
+}
+
+p {
+  margin: 1.5vh;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+input {
+  font-size: 1.1rem;
+  padding: 0.5rem 0.5 rem;
+  border-radius: 4.5px;
+  background: rgb(207, 200, 200);
+  border: 0.8px solid black;
+  margin-bottom: 2vh;
+}
+
+#check-button {
+  font-size: 1.2rem;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5.1 px;
+  margin: 10px 0px;
+  margin-bottom: 2vh;
+}
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: crimson;
+  border-top-right-radius: 1rem;
+  margin-left: 2.5rem;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+table {
+  margin: 1vh;
+  border-collapse: collapse;
+}
+
+table caption {
+  margin-bottom: 1vh;
+}
+
+table,
+th,
+td {
+  padding: 0.5rem 0.5rem;
+  border: 2.2px solid burlywood;
 }
