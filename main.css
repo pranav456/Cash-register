@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Josefin+Sans:wght@300&family=Lato:ital,wght@1,300&family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +11,7 @@
   font-size: 2rem;
   color: rgb(214, 135, 78);
   align-items: center;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
 #error-message {
@@ -36,23 +38,28 @@ p {
   margin-bottom: 4vh;
 }
 
-input {
-  font-size: 1.1rem;
-  padding: 0.5rem 0.5 rem;
-  border-radius: 4.5px;
-  background: rgb(207, 200, 200);
-  border: 0.8px solid black;
-  margin-bottom: 2vh;
+.input-text {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+
+  border: 2px solid indigo;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
 }
 
 #check-button {
-  font-size: 1rem;
-  color: black;
-  padding: 4px 14px;
-  margin: 10px 0px;
-  margin-bottom: 10px;
-  border: 1px solid;
-  border-radius: 4px;
+  background: blueviolet;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: 1rem auto;
+  display: block;
 }
 #check-button:hover {
   background-color: rgb(30, 128, 103);
