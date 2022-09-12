@@ -10,7 +10,6 @@
   color: rgb(214, 135, 78);
   text-align: center;
   margin: 0;
-
   font-family: "Fira Sans Condensed", sans-serif;
 }
 
@@ -20,6 +19,7 @@
 
 main h1 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -38,6 +38,7 @@ main {
   font-size: larger;
   margin: 0.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .input-text {
@@ -64,9 +65,6 @@ main {
   outline: #fff;
   margin: 1rem auto;
   display: block;
-}
-#check-button:hover {
-  background-color: rgb(30, 128, 103);
 }
 
 .list-non-bullet {
