@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Cash Register</title>
   </head>
   <body>
-    <div class="container">
-      <h1 class="heading">Cash Register Manager</h1>
-      <p class="description">
+    <main>
+      <h1>Cash Register Manager</h1>
+      <p style="text-align: center">
         Enter the bill amount and cash given by the customer and know the
         minimum number of notes to return
       </p>
-      <label style="font-weight: bold" for="bill-amount">Bill Amount :</label>
+      <label class="input-label" for="bill-amount">
+        <p>Bill Amount :</p>
+      </label>
       <input class="input-text" id="bill-amount" type="text" />
-      <label style="font-weight: bold" for="cash-given">Cash Given :</label>
+      <label class="input-label" for="cash-given">
+        <p>Cash Given :</p>
+      </label>
       <input class="input-text" id="cash-given" type="text" />
       <button id="check-button">Check</button>
       <p id="error-message"></p>
@@ -49,7 +53,7 @@
           <td>1</td>
         </tr>
       </table>
-    </div>
+    </main>
     <footer class="footer">
       <div class="footer-header">2022 | Pranav Bhargav</div>
       <ul class="social-links list-non-bullet">
